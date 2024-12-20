@@ -1,8 +1,13 @@
+import { Card } from "@/components/ui/card";
 
 export default function Home() {
     return (
-      <div className="flex w-full h-screen">
-        <h1>Dashboard</h1>
+      <div className="w-full h-full grid grid-cols-3 grid-rows-2 gap-4">
+        <Card className=""></Card>
+        <Card className=""></Card>
+        <Card className=""></Card>
+        <Card className=""></Card>
+        <Card className=""></Card>
       </div>
     );
   }

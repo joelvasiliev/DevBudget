@@ -18,8 +18,10 @@ export default function LoginForm() {
 
   return (
     <div className='flex w-full h-full'>
-      <div className='w-[65%] bg-gray-950'></div>
-      <Card className="w-[35%] min-h-screen flex flex-col justify-center p-12 bg-black/50 border border-[#8332a8]/50 backdrop-blur-md shadow-lg">
+      <div className='w-[65%] bg-gray-950'>
+        
+      </div>
+      <Card className="w-[35%] min-h-screen flex flex-col justify-center p-12 bg-black/50 border border-background-foreground backdrop-blur-md shadow-lg">
         <CardHeader className="flex items-center justify-center pb-2">
           <div className="mb-4 flex items-center justify-center">
             <Image
@@ -69,7 +71,7 @@ export default function LoginForm() {
           </div>
         </CardContent>
       </Card>
-    </div>
+  </div>
   )
 }
 

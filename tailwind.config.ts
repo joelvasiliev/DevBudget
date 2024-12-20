@@ -12,12 +12,16 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "spin-slow": "spin 3s linear infinite", // Adicionando a animação de rotação lenta
+        "spin-slow": "spin 3s linear infinite",
+        "background-position-spin":
+          "background-position-spin 3000ms infinite alternate",
+        shine: "shine var(--duration) infinite linear",
       },
       colors: {
         background: {
           DEFAULT: "#000000",
           foreground: "rgb(156 163 175 / 0.2);",
+          "foreground-fullfiled": "rgb(32, 34, 36);",
         },
         foreground: "#141111",
         secondary: {
@@ -63,6 +67,27 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "background-position-spin": {
+          "0%": {
+            backgroundPosition: "top center",
+          },
+          "100%": {
+            backgroundPosition: "bottom center",
+          },
+        },
+        shine: {
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          to: {
+            "background-position": "0% 0%",
+          },
+        },
       },
     },
   },
